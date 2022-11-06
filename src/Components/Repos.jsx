@@ -27,7 +27,7 @@ const Repos = () => {
 
   const displayRepo = repo
     .slice(pagesVisited, pagesVisited + usersPerPage)
-    .map(({ id, avatar_url, name, full_name, html_url, size }) => {
+    .map(({ id, name, full_name, html_url, size }) => {
       return (
         <>
           <div className="pt-8 bg-[#F6EED8] pb-8 p-4">
@@ -36,13 +36,6 @@ const Repos = () => {
                 className="rounded-sm shadow-lg p-5 bg-black text-[#C19167]"
                 key={id}
               >
-                <div className="card-head w-20 h-20 mx-auto">
-                  {/* <img
-                    src={owner.avatar_url}
-                    alt="github avatar"
-                    className="rounded-full"
-                  /> */}
-                </div>
                 <div className="card-body">
                   <h1>Name: {name}</h1>
                   <h2>Full-Name: {full_name}</h2>
