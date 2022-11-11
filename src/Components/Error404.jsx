@@ -1,6 +1,6 @@
 import React from "react";
-import bg3 from "../Assests/bg3.jpg";
-import ww from "../Assests/ww.png";
+import bg3 from "../Assests/bg3.webp";
+import ww from "../Assests/ww.webp";
 import { Link } from "react-router-dom";
 
 const Error404 = () => {

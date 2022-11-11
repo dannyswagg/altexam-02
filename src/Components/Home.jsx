@@ -1,7 +1,7 @@
 import React from "react";
-import bg from "../Assests/bg.jpg";
+import bg from "../Assests/bg.webp";
 import { Link } from "react-router-dom";
-import qq from "../Assests/qq.png";
+import qq from "../Assests/qq.webp";
 
 const Home = () => {
   return (
@@ -17,11 +17,11 @@ const Home = () => {
           src={bg}
           alt="Github animated logo and Groot from Guardian of the galaxy movie"
         />
-        <div className="absolute px-5 top-5 text-[#C19167] h-screen">
+        <div className="absolute px-5 top-5 text-[#C19167]">
           <h1 className="lg:text-8xl md:text-5xl text-2xl font-bold top-5">
             SYSTEM <br /> BoXX
           </h1>
-          <p className=" text-black font-bold lg:text-2xl text-1xl px-3">
+          <p className=" text-black font-bold lg:text-2xl text-1xl">
             A New System.
           </p>
           <div className="flex mt-4 bottom-0">
