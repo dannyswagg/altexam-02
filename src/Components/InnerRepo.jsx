@@ -23,15 +23,17 @@ const InnerRepo = () => {
 
   return (
     <>
-      <div className="bg-black text-[#c19167] lg:w-2/4 md:w-fit w-fit mx-auto mt-8 rounded p-8">
-        <h1 className="p-8 text-center font-bold">
-          Repo id: <br /> {id} <br />
-          <Link to="/">
-            <button className="rounded bg-[#c19167] text-black p-3 mt-3 font-bold">
-              Go Home
-            </button>
-          </Link>
-        </h1>
+      <div className="h-screen">
+        <div className="bg-black text-[#c19167] lg:w-2/4 md:w-fit w-fit mx-auto mt-8 rounded p-8">
+          <h1 className="p-8 text-center font-bold">
+            Repo id: <br /> {id} <br />
+            <Link to="/">
+              <button className="rounded bg-[#c19167] text-black p-3 mt-3 font-bold">
+                Go Home
+              </button>
+            </Link>
+          </h1>
+        </div>
       </div>
     </>
   );
