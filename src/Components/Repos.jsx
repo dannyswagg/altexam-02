@@ -8,14 +8,13 @@ const Repos = () => {
   const [loading, setLoading] = useState(true);
   const [pageNumber, setPageNumber] = useState(0);
 
-  const usersPerPage = 4;
+  const usersPerPage = 5;
   const pagesVisited = pageNumber * usersPerPage;
 
   const getRepos = () => {
     axios
       .get("https://api.github.com/users/dannyswagg/repos")
       .then((response) => {
-        console.log(response);
         const myRepo = response.data;
         setRepo(myRepo) || setLoading(false);
       });
@@ -31,7 +30,7 @@ const Repos = () => {
       return (
         <>
           <div className="pt-8 bg-[#F6EED8] pb-8 p-4">
-            <div className="text-center mx-auto lg:w-2/4 md:w-1/3 sm:w-[18rem]">
+            <div className="text-center mx-auto lg:w-2/4 md:w-1/3 w-[14rem]">
               <div
                 className="rounded-sm shadow-lg p-5 bg-black text-[#C19167]"
                 key={id}
@@ -65,14 +64,15 @@ const Repos = () => {
   return (
     <div>
       {loading && (
-        <h1 className=" bg-[#F6EED8] text-[#c19167] pt-16 text-center h-screen font-bold lg:text-8xl md:text-6xl sm:text-3xl tracking-wide">
+        <h1 className=" bg-[#F6EED8] text-[#c19167] pt-16 text-center h-screen font-bold lg:text-8xl md:text-6xl sm:text-5xl tracking-wide">
           Loading...
         </h1>
       )}
       {displayRepo}
 
       <ReactPaginate
-        className="flex bg-black rotate-90 text-[1xl] text-[#c19167] w-fit fixed top-2/4 p-4 -ml-16"
+        className="flex bg-black lg:rotate-90 md:rotate-90 rotate-0 text-[1xl] text-[#c19167]
+         w-fit lg:fixed md:fixed lg:top-2/4 md:top-2/4 p-4"
         previousLabel={"Prev"}
         nextLabel={"Next"}
         pageCount={pageCount}

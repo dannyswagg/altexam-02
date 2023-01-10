@@ -5,24 +5,24 @@ import { FaDailymotion } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-black text-[#c19167] flex justify-between items-center py-4 lg:h-28 md:h-28 sm:h-20 w-full">
+      <div className="bg-black text-[#c19167] flex items-center py-5 px-4 w-full">
         <Link to="/">
           <div>
-            <FaDailymotion size={40} className="text-[#C19167] ml-4" />
+            <FaDailymotion size={40} className="text-[#C19167]" />
           </div>
         </Link>
-        <ul className="mx-auto flex">
+        <ul className="mx-auto flex text-lg font-bold">
           <Link to="/">
-            <li className="p-4 hidden md:flex uppercase">Home</li>
+            <li className="hidden md:flex uppercase justify-between px-4">
+              Home
+            </li>
           </Link>
 
           <Link to="/">
-            <li className="text-6xl font-bold px-4 flex items-center justify-center">
-              BoXX
-            </li>
+            <li className="font-bold justify-center px-4">DoXX</li>
           </Link>
           <Link to="repositories">
-            <li className="p-4 hidden md:flex uppercase">Repositories</li>
+            <li className="hidden md:flex uppercase px-4">Repos</li>
           </Link>
         </ul>
       </div>
